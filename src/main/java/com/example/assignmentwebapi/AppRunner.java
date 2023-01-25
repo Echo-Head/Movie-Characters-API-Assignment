@@ -1,5 +1,6 @@
 package com.example.assignmentwebapi;
 
+import com.example.assignmentwebapi.models.enums.Gender;
 import com.example.assignmentwebapi.service.CharacterService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -16,8 +17,8 @@ public class AppRunner implements ApplicationRunner {
 
     @Override
     public void run (ApplicationArguments args) throws Exception{
+        //System.out.println(characterService.addCharacter("Ole", "And", Gender.MALE,"The Duck","awsomepicture.org"));
 
-        System.out.println("It's ALIVE!");
-
+        System.out.print(characterService.getCharacterById(1));
     }
 }
