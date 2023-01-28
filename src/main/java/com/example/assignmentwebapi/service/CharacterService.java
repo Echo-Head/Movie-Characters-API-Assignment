@@ -15,9 +15,9 @@ public CharacterService(CharacterRepository characterRepository){
     this.characterRepository = characterRepository;
 }
 
-public String getCharacterById(int characterId){
+public Character getCharacterById(int characterId){
    Optional<Character> value = characterRepository.findCharacterByCharacterId(characterId);
-    return value.get().getForName();
+    return value.get();
 }
 
 public Character addCharacter(String firstName, String lastName, Gender gender, String alias, String pictureUrl){
