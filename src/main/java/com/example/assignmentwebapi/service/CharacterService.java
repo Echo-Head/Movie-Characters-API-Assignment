@@ -15,7 +15,7 @@ public CharacterService(CharacterRepository characterRepository){
     this.characterRepository = characterRepository;
 }
 
-public Character getCharacterById(int characterId){
+public Character getCharacterById(long characterId){
    Optional<Character> value = characterRepository.findCharacterByCharacterId(characterId);
     return value.get();
 }
