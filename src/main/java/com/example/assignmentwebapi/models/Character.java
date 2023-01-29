@@ -33,5 +33,5 @@ public class Character {
     private String pictureUrl;
 
 
-
+    public Character(){};
 }
