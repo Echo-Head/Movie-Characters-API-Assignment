@@ -5,22 +5,20 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.stereotype.Component;
+
+import java.util.Set;
 
 @Entity
 @Getter @Setter @ToString
 public class Character {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long characterId;
+    @Column(name = "character_id")
+    private int id;
 
-    @Column(nullable = false, length = 30)
-    private String forName;
-
-    @Column(nullable = false, length = 40)
-    private String lastName;
+    @Column(nullable = false, length = 60)
+    private String fullName;
 
     @Column(nullable = false, length = 40)
     private String alias;
@@ -32,6 +30,8 @@ public class Character {
     @Column()
     private String pictureUrl;
 
-
     public Character(){};
+
+    @ManyToMany(mappedBy = "characters")
+    private Set<Movie> movies;
 }

@@ -1,6 +1,10 @@
-package com.example.assignmentwebapi.Controller.mappers;
+package com.example.assignmentwebapi.mappers;
 
 import com.example.assignmentwebapi.models.Character;
+import com.example.assignmentwebapi.models.Movie;
+import com.example.assignmentwebapi.models.dtos.movie.MovieDTO;
+import com.example.assignmentwebapi.models.dtos.movie.MoviePostDTO;
+import com.example.assignmentwebapi.models.dtos.movie.MovieUpdateDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;

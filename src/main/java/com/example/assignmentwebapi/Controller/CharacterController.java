@@ -1,7 +1,7 @@
 package com.example.assignmentwebapi.Controller;
 
-import com.example.assignmentwebapi.Controller.dto.CharacterDTO;
-import com.example.assignmentwebapi.Controller.mappers.CharacterMapper;
+import com.example.assignmentwebapi.mappers.CharacterMapper;
+import com.example.assignmentwebapi.models.dtos.character.CharacterDTO;
 import com.example.assignmentwebapi.service.CharacterService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,11 +20,10 @@ private final CharacterMapper characterMapper;
 private final CharacterService characterService;
 
 
-
-@GetMapping("/get/{id}")
-public ResponseEntity getCharacterById(@PathVariable(value = "id") long characterId){
+@GetMapping("{id}")
+public ResponseEntity getCharacterById(@PathVariable int id){
     System.out.println("get funtion first line");
-    CharacterDTO characterDTO = characterMapper.toCharacterDto(characterService.getCharacterById(characterId));
+    CharacterDTO characterDTO = characterMapper.characterToCharacterDto(characterService.getCharacterById(id));
     return ResponseEntity.ok(characterDTO);
 }
 

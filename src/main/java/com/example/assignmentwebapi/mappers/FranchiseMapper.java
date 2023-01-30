@@ -1,8 +1,15 @@
-package com.example.assignmentwebapi.Controller.mappers;
+package com.example.assignmentwebapi.mappers;
 
+import com.example.assignmentwebapi.models.Franchise;
+import com.example.assignmentwebapi.models.Movie;
+import com.example.assignmentwebapi.models.dtos.franchise.FranchiseDTO;
+import com.example.assignmentwebapi.models.dtos.franchise.FranchisePostDTO;
+import com.example.assignmentwebapi.models.dtos.franchise.FranchiseUpdateDTO;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 
+import java.util.Collection;
 import java.util.Set;
 import java.util.stream.Collectors;
 
