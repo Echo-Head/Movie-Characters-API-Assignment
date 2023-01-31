@@ -1,8 +1,8 @@
-package com.example.assignmentwebapi.Controller;
+package com.example.assignmentwebapi.controllers;
 
 import com.example.assignmentwebapi.mappers.CharacterMapper;
 import com.example.assignmentwebapi.models.dtos.character.CharacterDTO;
-import com.example.assignmentwebapi.service.CharacterService;
+import com.example.assignmentwebapi.services.CharacterService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

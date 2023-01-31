@@ -27,7 +27,7 @@ public abstract class MovieMapper {
     @Named("charactersToIds")
     Set<Integer> map(Set<Character> source) {
         if (source == null) return null;
-        return source.stream().map(ch -> ch.getId()
+        return source.stream().map(Character::getId
         ).collect(Collectors.toSet());
     }
 }

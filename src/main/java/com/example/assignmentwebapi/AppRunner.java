@@ -1,7 +1,6 @@
 package com.example.assignmentwebapi;
 
-import com.example.assignmentwebapi.models.enums.Gender;
-import com.example.assignmentwebapi.service.CharacterService;
+import com.example.assignmentwebapi.services.CharacterService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;

@@ -1,8 +1,8 @@
-package com.example.assignmentwebapi.service;
+package com.example.assignmentwebapi.services;
 
 import com.example.assignmentwebapi.models.Character;
 import com.example.assignmentwebapi.models.enums.Gender;
-import com.example.assignmentwebapi.repository.CharacterRepository;
+import com.example.assignmentwebapi.repositories.CharacterRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -20,10 +20,10 @@ public Character getCharacterById(long characterId){
     return value.get();
 }
 
-public Character addCharacter(String firstName, String lastName, Gender gender, String alias, String pictureUrl){
+public Character addCharacter(String fullName, String alias, Gender gender,  String pictureUrl){
     Character c = new Character();
-    c.setForName(firstName);
-    c.setLastName(lastName);
+    c.setFullName(fullName);
+    c.setAlias(alias);
     c.setAlias(alias);
     c.setGender(gender);
     c.setPictureUrl(pictureUrl);
