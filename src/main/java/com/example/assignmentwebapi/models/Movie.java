@@ -17,7 +17,7 @@ public class Movie {
     private int id;
     @Column(nullable = false)
     private String title;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 420)
     private String genre;
     private int releaseYear;
     private String director;

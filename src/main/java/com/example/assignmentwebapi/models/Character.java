@@ -9,7 +9,9 @@ import lombok.ToString;
 import java.util.Set;
 
 @Entity
-@Getter @Setter @ToString
+@Getter
+@Setter
+@Table(name = "character")
 public class Character {
 
     @Id
@@ -17,20 +19,16 @@ public class Character {
     @Column(name = "character_id")
     private int id;
 
-    @Column(nullable = false, length = 60)
+    @Column(nullable = false, length = 50)
     private String fullName;
 
-    @Column(nullable = false, length = 40)
+    @Column(nullable = false, length = 50)
     private String alias;
 
+    @Column(nullable = false, length = 10)
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private Gender gender;
-
-    @Column()
     private String pictureUrl;
-
-    public Character(){};
 
     @ManyToMany(mappedBy = "characters")
     private Set<Movie> movies;
