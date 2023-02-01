@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/api/vi/character")
+@RequestMapping(path = "/api/v1/character")
 public class CharacterController {
 
 
