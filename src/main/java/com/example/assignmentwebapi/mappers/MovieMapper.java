@@ -13,6 +13,8 @@ import java.util.Collection;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+// Mapper for Movies
+
 @Mapper(componentModel = "spring")
 public abstract class MovieMapper {
     // Mappings from DTO to movie.

@@ -13,6 +13,8 @@ import java.util.Collection;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+// Mapper for franchises
+
 @Mapper(componentModel = "spring")
 public abstract class FranchiseMapper {
     // Mappings from DTO to franchise

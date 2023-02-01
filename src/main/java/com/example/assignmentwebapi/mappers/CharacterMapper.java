@@ -14,10 +14,8 @@ import java.util.Collection;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * Mapper for characters. Notice how the mapping is fairly simple and required no services.
- * This is by design and the complexity is handled through other endpoints and services.
- */
+ // Mapper for characters
+
 @Mapper(componentModel = "spring")
 public abstract class CharacterMapper {
     // Mappings from DTO to character.
