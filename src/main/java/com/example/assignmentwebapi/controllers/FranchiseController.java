@@ -1,5 +1,6 @@
 package com.example.assignmentwebapi.controllers;
 
+import com.example.assignmentwebapi.exceptions.error.ApiErrorResponse;
 import com.example.assignmentwebapi.mappers.CharacterMapper;
 import com.example.assignmentwebapi.mappers.FranchiseMapper;
 import com.example.assignmentwebapi.mappers.MovieMapper;
@@ -8,6 +9,8 @@ import com.example.assignmentwebapi.models.dtos.character.CharacterDTO;
 import com.example.assignmentwebapi.models.dtos.franchise.FranchiseDTO;
 import com.example.assignmentwebapi.models.dtos.franchise.FranchisePostDTO;
 import com.example.assignmentwebapi.models.dtos.franchise.FranchiseUpdateDTO;
+import com.example.assignmentwebapi.models.dtos.movie.MovieDTO;
+import com.example.assignmentwebapi.services.franchise.FranchiseService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
