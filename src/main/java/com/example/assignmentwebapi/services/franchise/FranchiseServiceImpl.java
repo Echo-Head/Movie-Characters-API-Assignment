@@ -3,6 +3,8 @@ package com.example.assignmentwebapi.services.franchise;
 import com.example.assignmentwebapi.models.Character;
 import com.example.assignmentwebapi.models.Franchise;
 import com.example.assignmentwebapi.models.Movie;
+import com.example.assignmentwebapi.repositories.FranchiseRepository;
+import com.example.assignmentwebapi.repositories.MovieRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

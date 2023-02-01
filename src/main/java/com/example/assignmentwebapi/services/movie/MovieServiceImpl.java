@@ -3,6 +3,8 @@ package com.example.assignmentwebapi.services.movie;
 import com.example.assignmentwebapi.models.Character;
 import com.example.assignmentwebapi.models.Movie;
 import com.example.assignmentwebapi.repositories.CharacterRepository;
+import com.example.assignmentwebapi.repositories.FranchiseRepository;
+import com.example.assignmentwebapi.repositories.MovieRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
