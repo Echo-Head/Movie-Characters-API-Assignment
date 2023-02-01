@@ -1,4 +1,4 @@
-package com.example.assignmentwebapi.services;
+package com.example.assignmentwebapi.services.character;
 
 import com.example.assignmentwebapi.models.Character;
 import com.example.assignmentwebapi.models.enums.Gender;

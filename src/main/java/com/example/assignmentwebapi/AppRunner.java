@@ -1,6 +1,6 @@
 package com.example.assignmentwebapi;
 
-import com.example.assignmentwebapi.services.CharacterService;
+import com.example.assignmentwebapi.services.character.CharacterService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
