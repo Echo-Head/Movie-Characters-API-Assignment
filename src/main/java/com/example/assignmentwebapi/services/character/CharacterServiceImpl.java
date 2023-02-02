@@ -45,9 +45,14 @@ public class CharacterServiceImpl implements CharacterService{
         characterRepository.deleteById(id);
     }
 
+    /**
+     * Deletes character references from all character's Movies in case of Character deletion
+     *
+     * @param characterId character ID that is being deleted
+     */
 
-    private void deleteCharacterReference(int id) {
-        Character character = characterRepository.findById(id).orElseThrow(() -> new CharacterNotFoundException(id));
+    private void deleteCharacterReference(int characterId) {
+        Character character = characterRepository.findById(characterId).orElseThrow(() -> new CharacterNotFoundException(characterId));
         character.getMovies().forEach(movie -> {
             Set<Character> chars = movie.getCharacters();
             chars.remove(character);

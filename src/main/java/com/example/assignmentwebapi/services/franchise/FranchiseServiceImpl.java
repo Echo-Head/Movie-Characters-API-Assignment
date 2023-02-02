@@ -53,21 +53,18 @@ public class FranchiseServiceImpl implements FranchiseService{
     public void updateMovies(int franchiseId, int[] movieIds) {
         // Get franchise
         Franchise franchise = franchiseRepository.findById(franchiseId).orElseThrow(() -> new FranchiseNotFoundException(franchiseId));
-        // Get characters for all the ids passed. Need to exist.
+        // Get characters for all the ids passed
         Set<Movie> movies = new HashSet<>();
         for (int id: movieIds) {
             Movie movie = movieRepository.findById(id).orElseThrow(() -> new MovieNotFoundException(id));
             movies.add(movie);
         }
-        // Set each movie's franchise. We need to do this because movie
-        // owns the relationship (mappedBy is on franchise, and movie has joinColumn)
-        // If it was the other way round we could say franchise.setMovies
+        // Set each movie's franchise
         movies.forEach(m -> {
             m.setFranchise(franchise);
         });
         franchiseRepository.save(franchise);
     }
-
 
     @Override
     public Set<Movie> findAllMovies(int franchiseId) {
@@ -89,7 +86,7 @@ public class FranchiseServiceImpl implements FranchiseService{
     /**
      * Removes franchise reference from Movie objects in case of Franchise deletion
      *
-     * @param franchiseId franchise id that should be deleted
+     * @param franchiseId franchise id that is being deleted
      */
     private void removeFranchiseReferenceFromMovies(int franchiseId) {
         Collection<Movie> franchiseMovies = movieRepository.findMoviesFromFranchise(franchiseId);

@@ -107,9 +107,9 @@ public class MovieServiceImpl implements MovieService{
     }
 
     /**
-     * Deletes movie reference from character object, in case of movie deletion.
+     * Deletes movie reference from character object in case of movie deletion
      *
-     * @param movieId movie ID that should be deleted
+     * @param movieId movie ID that is being deleted
      */
     private void deleteMovieReference(int movieId) {
         Movie movie = movieRepository.findById(movieId).orElseThrow(() -> new MovieNotFoundException(movieId));
