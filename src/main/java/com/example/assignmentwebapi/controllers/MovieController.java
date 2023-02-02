@@ -167,7 +167,7 @@ public class MovieController {
         return ResponseEntity.noContent().build();
     }
 
-    @Operation(summary = "Update the list of characters that appear in a given movie.")
+    @Operation(summary = "Update the list of characters that appear in a given movie")
     @ApiResponses( value = {
             @ApiResponse(responseCode = "204",
                     description = "No content",

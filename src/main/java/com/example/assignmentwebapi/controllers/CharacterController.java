@@ -61,7 +61,7 @@ public class CharacterController {
                 ));
     }
 
-    @Operation(summary = "Get a character by its ID")
+    @Operation(summary = "Get character by ID")
     @ApiResponses( value = {
             @ApiResponse(responseCode = "200",
                     description = "Success",

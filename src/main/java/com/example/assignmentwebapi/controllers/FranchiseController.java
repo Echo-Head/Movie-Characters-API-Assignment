@@ -67,7 +67,7 @@ public class FranchiseController {
                 ));
     }
 
-    @Operation(summary = "Get a franchise by its ID")
+    @Operation(summary = "Get franchise by ID")
     @ApiResponses( value = {
             @ApiResponse(responseCode = "200",
                     description = "Success",
@@ -173,7 +173,7 @@ public class FranchiseController {
         return ResponseEntity.noContent().build();
     }
 
-    @Operation(summary = "Update the movies that belong to a given franchise.")
+    @Operation(summary = "Update the movies that belong to a given franchise")
     @ApiResponses( value = {
             @ApiResponse(responseCode = "204",
                     description = "No content",
