@@ -16,8 +16,8 @@ public class AppRunner implements ApplicationRunner {
 
     @Override
     public void run (ApplicationArguments args) throws Exception{
-        //System.out.println(characterService.addCharacter("Ole", "And", Gender.MALE,"The Duck","awsomepicture.org"));
+        // System.out.println(characterService.addCharacter("Ole", "And", Gender.MALE,"The Duck","awsomepicture.org"));
 
-        System.out.print(characterService.getCharacterById(1));
+        // System.out.print(characterService.getCharacterById(1));
     }
 }

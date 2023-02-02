@@ -19,16 +19,4 @@ public CharacterController(CharacterMapper characterMapper, CharacterService cha
 private final CharacterMapper characterMapper;
 private final CharacterService characterService;
 
-
-@GetMapping("{id}")
-public ResponseEntity getCharacterById(@PathVariable int id){
-    System.out.println("get funtion first line");
-    CharacterDTO characterDTO = characterMapper.characterToCharacterDto(characterService.getCharacterById(id));
-    return ResponseEntity.ok(characterDTO);
-}
-
-
-
-
-
 }
