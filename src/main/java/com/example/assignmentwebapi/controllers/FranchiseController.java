@@ -53,7 +53,7 @@ public class FranchiseController {
                             array = @ArraySchema(schema = @Schema(implementation = FranchiseDTO.class)))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -76,7 +76,7 @@ public class FranchiseController {
                             schema = @Schema(implementation = FranchiseDTO.class))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -105,7 +105,7 @@ public class FranchiseController {
                             schema = @Schema(implementation = FranchisePostDTO.class))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -126,7 +126,7 @@ public class FranchiseController {
                     description = "No content",
                     content = @Content),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -155,7 +155,7 @@ public class FranchiseController {
                     description = "No content",
                     content = @Content),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -179,7 +179,7 @@ public class FranchiseController {
                     description = "No content",
                     content = @Content),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -206,7 +206,7 @@ public class FranchiseController {
                             array = @ArraySchema(schema = @Schema(implementation = MovieDTO.class)))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -235,7 +235,7 @@ public class FranchiseController {
                             array = @ArraySchema(schema = @Schema(implementation = CharacterDTO.class)))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)

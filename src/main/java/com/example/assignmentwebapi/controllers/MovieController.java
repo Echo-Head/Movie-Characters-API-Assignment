@@ -47,7 +47,7 @@ public class MovieController {
                             array = @ArraySchema(schema = @Schema(implementation = MovieDTO.class)))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -70,7 +70,7 @@ public class MovieController {
                             schema = @Schema(implementation = MovieDTO.class))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -99,7 +99,7 @@ public class MovieController {
                             schema = @Schema(implementation = MovieDTO.class))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -120,7 +120,7 @@ public class MovieController {
                     description = "No content",
                     content = @Content),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -149,7 +149,7 @@ public class MovieController {
                     description = "No content",
                     content = @Content),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -173,7 +173,7 @@ public class MovieController {
                     description = "No content",
                     content = @Content),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
@@ -200,7 +200,7 @@ public class MovieController {
                             array = @ArraySchema(schema = @Schema(implementation = CharacterDTO.class)))
                     }),
             @ApiResponse(responseCode = "400",
-                    description = "Malformed request",
+                    description = "Bad request",
                     content = @Content(
                             mediaType = "application/json",
                             schema=@Schema(implementation = ApiErrorResponse.class)
