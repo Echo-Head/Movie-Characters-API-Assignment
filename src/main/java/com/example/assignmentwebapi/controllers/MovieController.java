@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 
 @RestController
-@RequestMapping(path = "/api/v1/movies")
+@RequestMapping(path = "api/v1/movies")
 @Tag(name = "Movies", description = "Endpoints to interact with movies")
 public class MovieController {
 

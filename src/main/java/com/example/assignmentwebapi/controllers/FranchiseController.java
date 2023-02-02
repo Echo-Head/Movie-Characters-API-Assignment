@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 
 @RestController
-@RequestMapping(path = "/api/v1/franchises")
+@RequestMapping(path = "api/v1/franchises")
 @Tag(name = "Franchises", description = "Endpoints to interact with franchises")
 public class FranchiseController {
 
