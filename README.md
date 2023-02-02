@@ -1,8 +1,6 @@
-# Java Assignment 3 Sample Solution
+# Spring Assignment
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![pipeline status](https://gitlab.com/noroff-accelerate/java/projects/spring-with-ci/badges/master/pipeline.svg)](https://gitlab.com/LucasPersson/web-api-and-database-with-spring/-/pipelines)
-
 
 Create a Web API and database with Spring.
 
@@ -10,7 +8,6 @@ Create a Web API and database with Spring.
 
 - [Overview](#overview)
 - [Swagger](#swagger)
-- [Mapping](#mapping)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -73,21 +70,6 @@ public class Assignment3Application {
 @Tag(name = "Characters", description = "Endpoints to interact with characters")
 public class CharacterController {
 ```
-
-## Mapping
-
-Mapping in this project is simple, no services are needed. This is to show 
-how to design around complex mapping. Mapping should be simple, if its 
-complex, think about how to alter the design to make it simple. The easiest 
-way is to move the complex mapping requirements into separate endpoints - 
-characters in movies for example.
-
-## Deployment
-
-The current pipeline will fail to deploy to heroku.
-
-`HEROKU_APP_NAME` needs to be changed to your app. The auth token also needs 
-to be added as a var in your Gitlab repo.
 
 ## Maintainers
 
