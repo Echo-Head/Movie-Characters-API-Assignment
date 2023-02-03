@@ -15,13 +15,17 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "movie_id")
     private int id;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 150)
     private String title;
-    @Column(nullable = false, length = 420)
+    @Column(nullable = false, length = 30)
     private String genre;
+    @Column(nullable = false, length = 5)
     private int releaseYear;
+    @Column(nullable = false, length = 50)
     private String director;
+    @Column(nullable = false, length = 100)
     private String picture;
+    @Column(nullable = false, length = 100)
     private String trailer;
 
     @ManyToMany
