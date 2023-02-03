@@ -23,9 +23,9 @@ public class Movie {
     private int releaseYear;
     @Column(nullable = false, length = 50)
     private String director;
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 300)
     private String picture;
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 300)
     private String trailer;
 
     @ManyToMany

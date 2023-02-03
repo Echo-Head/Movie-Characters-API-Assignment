@@ -28,7 +28,7 @@ public class Character {
     @Column(nullable = false, length = 10)
     @Enumerated(EnumType.STRING)
     private Gender gender;
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 300)
     private String picture;
 
     @ManyToMany(mappedBy = "characters")
