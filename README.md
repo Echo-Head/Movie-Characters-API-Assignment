@@ -41,23 +41,23 @@ Swagger has been configured to be as complete as needed. This includes:
 
 > API name, description, and version
 
-![API name](./src/main/resources/swagger-documentation/swagger-heading.png)
+![API name](./src/main/resources/swagger-documentation/swagger-heading.PNG)
 
 > Controller name and description
 
-![Movie controller](./src/main/resources/swagger-documentation/movie-controller-collapse.png)
-![Character controller](./src/main/resources/swagger-documentation/character-controller-collapse.png)
-![Franchise controller](./src/main/resources/swagger-documentation/franchise-controller-collapse.png)
+![Movie controller](./src/main/resources/swagger-documentation/movie-controller-collapse.PNG)
+![Character controller](./src/main/resources/swagger-documentation/character-controller-collapse.PNG)
+![Franchise controller](./src/main/resources/swagger-documentation/franchise-controller-collapse.PNG)
 
 > Response types for failures and success
 
-![Sample success](./src/main/resources/swagger-documentation/sample-response-success.png)
-![Sample failure](./src/main/resources/swagger-documentation/sample-response-error.png)
-![Example success](./src/main/resources/swagger-documentation/example-success.png)
+![Sample success](./src/main/resources/swagger-documentation/sample-response-success.PNG)
+![Sample failure](./src/main/resources/swagger-documentation/sample-response-error.PNG)
+![Example success](./src/main/resources/swagger-documentation/example-success.PNG)
 
 > All required data structures (no entities shown to client)
 
-![DTOs](./src/main/resources/swagger-documentation/dtos.png)
+![DTOs](./src/main/resources/swagger-documentation/dtos.PNG)
 
 The configuration for the API details and the controller details was done 
 with @Info and @Tag:
