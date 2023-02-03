@@ -1,7 +1,6 @@
 package com.example.assignmentwebapi.mappers;
 
 import com.example.assignmentwebapi.models.Character;
-
 import com.example.assignmentwebapi.models.Movie;
 import com.example.assignmentwebapi.models.dtos.character.CharacterDTO;
 import com.example.assignmentwebapi.models.dtos.character.CharacterPostDTO;

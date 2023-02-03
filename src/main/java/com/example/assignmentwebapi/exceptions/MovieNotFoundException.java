@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 public class MovieNotFoundException extends RuntimeException{
     /**
-     * Thrown if a franchise with given ID does not exist
+     * Thrown if a movie with given ID does not exist
      *
      * @param id movie ID
      */
