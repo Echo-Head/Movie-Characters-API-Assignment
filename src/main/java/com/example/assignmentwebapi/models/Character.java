@@ -28,7 +28,8 @@ public class Character {
     @Column(nullable = false, length = 10)
     @Enumerated(EnumType.STRING)
     private Gender gender;
-    private String pictureUrl;
+    @Column(nullable = false, length = 100)
+    private String picture;
 
     @ManyToMany(mappedBy = "characters")
     private Set<Movie> movies;

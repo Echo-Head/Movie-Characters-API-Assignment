@@ -10,5 +10,5 @@ public class CharacterPostDTO {
     private String fullName;
     private String alias;
     private Gender gender;
-    private String Picture;
+    private String picture;
 }

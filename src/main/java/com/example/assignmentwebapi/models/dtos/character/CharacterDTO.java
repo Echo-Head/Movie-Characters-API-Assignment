@@ -12,7 +12,7 @@ public class CharacterDTO {
     private String fullName;
     private String alias;
     private Gender gender;
-    private String Picture;
+    private String picture;
     private Set<Integer> movies;
 
 }

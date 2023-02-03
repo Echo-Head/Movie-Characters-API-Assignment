@@ -9,5 +9,5 @@ public class CharacterUpdateDTO {
     private String fullName;
     private String alias;
     private Gender gender;
-    private String Picture;
+    private String picture;
 }
