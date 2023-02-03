@@ -1,6 +1,8 @@
 # Spring Assignment
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![pipeline status](https://gitlab.com/noroff-accelerate/java/projects/spring-with-ci/badges/master/pipeline.svg)](https://gitlab.com/LucasPersson/web-api-and-database-with-spring/-/pipelines)
+
 
 Create a Web API and database with Spring.
 
