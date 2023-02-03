@@ -65,7 +65,7 @@ with @Info and @Tag:
 ```java
 @OpenAPIDefinition(info = @Info(
         title = "Movie Database API",
-        description = "A REST API to provide access to movies, the characters that are in those movies, and the franchises those movies belong to. Created by Anette Londal & Adrian Friduson",
+        description = "A REST API to provide access to movies, the characters that are in those movies, and the franchises those movies belong to. Created by Anette Londal & Adrian Friduson.",
         version = "1.0"
 ))
 public class AssignmentWebApiApplication {
